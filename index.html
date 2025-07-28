@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>My Portfolio</title>
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Responsive queries -->
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- Particle background as the first element -->
+    <!-- Particle background (animated dots) -->
     <div id="particles-js"></div>
 
-    <!-- Desktop Navigation -->
+    <!-- Desktop Navigation Bar -->
     <nav id="desktop-nav" aria-label="Main Navigation">
       <div class="logo">SP</div>
       <ul class="nav-links">
@@ -23,7 +24,8 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <!-- Mobile Navigation -->
+
+    <!-- Mobile Navigation Bar -->
     <nav id="hamburger-nav" aria-label="Mobile Navigation">
       <div class="logo">SP</div>
       <div class="hamburger-menu">
@@ -40,9 +42,11 @@
         </ul>
       </div>
     </nav>
+
     <!-- Profile Section -->
     <section id="profile" aria-label="Profile">
       <div class="section__pic-container">
+        <!-- Profile picture -->
         <img src="./assets/profile-pic.png" alt="Swetha Pothu profile picture" />
       </div>
       <div class="section__text">
@@ -53,6 +57,7 @@
           <button class="btn btn-color-2" onclick="window.open('./assets/swetha_resume.pdf')">Download CV</button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
         </div>
+        <!-- Social icons -->
         <div id="socials-container">
           <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/pothu-swetha-63246b203/'" aria-label="LinkedIn"/>
           <img src="./assets/github.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/pothu14'" aria-label="Github"/>
@@ -60,21 +65,25 @@
         </div>
       </div>
     </section>
+
     <!-- About Section -->
     <section id="about" aria-label="About Me">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container_1">
+          <!-- About picture -->
           <img src="./assets/white background (1).png" alt="About Swetha Pothu" class="about-pic" loading="eager" decoding="sync" fetchpriority="high" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
+            <!-- Experience Card -->
             <div class="details-container">
               <img src="./assets/experience.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
               <p>2+ years <br />Data Analyst</p>
             </div>
+            <!-- Education Card -->
             <div class="details-container">
               <img src="./assets/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
@@ -88,12 +97,15 @@
           </div>
         </div>
       </div>
+      <!-- Down arrow to next section -->
       <img src="./assets/arrow.png" alt="Scroll to Experience" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
+
     <!-- Experience Section -->
     <section id="experience" class="details-container" aria-label="Professional Experience">
       <h2 class="title">Professional Experience</h2>
       <div class="about-containers">
+        <!-- Experience 1 -->
         <div class="about-details-container">
           <h3>IKS Health (Inventurus Knowledge Solutions Pvt Ltd)</h3>
           <p><em>Revenue Cycle Representative AR</em> — Hyderabad, India<br><strong>June 2021 – Dec 2021</strong></p>
@@ -105,6 +117,7 @@
             <li>Maintained HIPAA compliance handling sensitive patient info.</li>
           </ul>
         </div>
+        <!-- Experience 2 -->
         <div class="about-details-container">
           <h3>Wipro</h3>
           <p><em>Data Analyst (Google Shopping Process)</em> — Hyderabad, India<br><strong>Sep 2019 – 2020</strong></p>
@@ -116,6 +129,7 @@
         </div>
       </div>
     </section>
+
     <!-- Skills Section -->
     <section id="skills" class="details-container" aria-label="Skills and Certifications">
       <h2 class="title">Skills</h2>
@@ -138,12 +152,14 @@
         </div>
       </div>
     </section>
+
     <!-- Projects Section -->
     <section id="projects" aria-label="Projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- Project 1 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/project-1.jpg" alt="Airbnb Price Prediction project" class="project-img" />
@@ -154,6 +170,7 @@
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://public.tableau.com/views/AirbnbNYCPricePredictionAnalytics/AirbnbNYCPriceAvailabilityListingInsights'">Tableau</button>
             </div>
           </div>
+          <!-- Project 2 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/project-2.jpg" alt="Bitcoin Price Strategy project" class="project-img" />
@@ -164,6 +181,7 @@
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://public.tableau.com/views/BitcoinPriceStrategyVolatilityDashboard20122021/Dashboard1'">Tableau</button>
             </div>
           </div>
+          <!-- Project 3 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/project-3.jpg" alt="Inflight Catering project" class="project-img" />
@@ -176,8 +194,10 @@
           </div>
         </div>
       </div>
+      <!-- Down arrow to contact section -->
       <img src="./assets/arrow.png" alt="Scroll to Contact" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
+
     <!-- Contact Section -->
     <section id="contact" aria-label="Contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -193,6 +213,7 @@
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer>
       <nav aria-label="Footer Navigation">
@@ -205,8 +226,58 @@
       </nav>
       <p>Copyright &#169; 2025 Swetha Pothu. All Rights Reserved.</p>
     </footer>
+
+    <!-- Particle.js library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+    "color": { "value": "#ff3cac" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.7, "random": false },
+    "size": { "value": 3, "random": true },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ff3cac",
+      "opacity": 0.5,
+      "width": 1.5
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": { "enable": true, "mode": "grab" },
+      "onclick": { "enable": false }
+    },
+    "modes": {
+      "grab": { "distance": 200, "line_linked": { "opacity": 0.8 } }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+    <!-- Your custom JS -->
     <script src="script.jss"></script>
     <!-- Optionally, add a11y improvements and smooth scroll polyfill for older browsers -->
   </body>
 </html>
+
+<style>
+#particles-js {
+  z-index: 0;
+}
+body > *:not(#particles-js) {
+  position: relative;
+  z-index: 2;
+}
+</style>
